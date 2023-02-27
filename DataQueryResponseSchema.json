@@ -1,0 +1,161 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://margarita.etsist.upm.es/avf_response_schema.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"@graph"
+	],
+	"properties": {
+		"@graph": {
+			"$id": "#root/@graph", 
+			"title": "@graph", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/@graph/devices", 
+				"title": "Devices", 
+				"type": "object",
+				"required": [
+					"@id",
+					"measurements"
+				],
+				"properties": {
+					"@id": {
+						"$id": "#root/@graph/devices/@id", 
+						"title": "Device @id", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"afc node 0205 25"
+						],
+						"pattern": "^.*$"
+					},
+					"measurements": {
+						"$id": "#root/@graph/devices/measurements", 
+						"title": "Measurements", 
+						"type": "array",
+						"default": [],
+						"items":{
+							"$id": "#root/@graph/devices/measurements/items", 
+							"title": "Observations captured", 
+							"type": "object",
+							"required": [
+								"@type",
+								"observedProperty",
+								"containsPlot"
+							],
+							"properties": {
+								"@type": {
+									"$id": "#root/@graph/devices/measurements/items/@type", 
+									"title": "@type", 
+									"type": "string",
+									"default": "",
+									"examples": [
+										"Observation"
+									],
+									"pattern": "^.*$"
+								},
+								"observedProperty": {
+									"$id": "#root/@graph/devices/measurements/items/observedProperty", 
+									"title": "Observedproperty", 
+									"type": "string",
+									"default": "",
+									"examples": [
+										"volumetric water content mineral soil"
+									],
+									"pattern": "^.*$"
+								},
+								"containsPlot": {
+									"$id": "#root/@graph/devices/measurements/items/containsPlot", 
+									"title": "Containsplot", 
+									"type": "array",
+									"default": [],
+									"items":{
+										"$id": "#root/@graph/devices/measurements/items/containsPlot/observations", 
+										"title": "Items", 
+										"type": "object",
+										"required": [
+											"Measurement",
+											"Date",
+											"asWKT",
+											"Value",
+											"uom",
+											"Provider"
+										],
+										"properties": {
+											"Measurement": {
+												"$id": "#root/@graph/devices/measurements/items/containsPlot/observations/Measurement", 
+												"title": "Measurement", 
+												"type": "string",
+												"default": "",
+												"examples": [
+													"volumetric water content mineral soil"
+												],
+												"pattern": "^.*$"
+											},
+											"Date": {
+												"$id": "#root/@graph/devices/measurements/items/containsPlot/observations/Date", 
+												"title": "Date", 
+												"type": "string",
+												"default": "",
+												"examples": [
+													"2022-11-01T03:07:00Z"
+												],
+												"pattern": "^.*$"
+											},
+											"asWKT": {
+												"$id": "#root/@graph/devices/measurements/items/containsPlot/observations/asWKT", 
+												"title": "Aswkt", 
+												"type": "string",
+												"default": "",
+												"examples": [
+													"POINT(24.717313766479492 64.03141784667969)"
+												],
+												"pattern": "^.*$"
+											},
+											"Value": {
+												"$id": "#root/@graph/devices/measurements/items/containsPlot/observations/Value", 
+												"title": "Value", 
+												"type": "string",
+												"default": "",
+												"examples": [
+													"37.439998626708984"
+												],
+												"pattern": "^.*$"
+											},
+											"uom": {
+												"$id": "#root/@graph/devices/measurements/items/containsPlot/observations/uom", 
+												"title": "Uom", 
+												"type": "string",
+												"default": "",
+												"examples": [
+													"%"
+												],
+												"pattern": "^.*$"
+											},
+											"Provider": {
+												"$id": "#root/@graph/devices/measurements/items/containsPlot/observations/Provider", 
+												"title": "Provider", 
+												"type": "string",
+												"default": "",
+												"examples": [
+													"UPM"
+												],
+												"pattern": "^.*$"
+											}
+										}
+									}
+
+								}
+							}
+						}
+
+					}
+				}
+			}
+
+		}
+	}
+}
