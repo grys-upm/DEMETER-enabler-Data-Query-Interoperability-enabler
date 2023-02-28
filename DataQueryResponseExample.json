@@ -1359,17 +1359,17 @@
           "containsPlot": [
             {
               "Measurement": "wind speed",
-              "Date": "2023-02-27T08:40:00Z",
+              "Date": "2023-02-28T01:20:00Z",
               "asWKT": "POINT(24.72468 64.05029)",
-              "Value": "1.9",
+              "Value": "8.6",
               "uom": "m/s",
               "Provider": "UPM"
             },
             {
               "Measurement": "wind speed",
-              "Date": "2023-02-27T08:30:00Z",
+              "Date": "2023-02-28T01:10:00Z",
               "asWKT": "POINT(24.72468 64.05029)",
-              "Value": "2.0",
+              "Value": "7.8",
               "uom": "m/s",
               "Provider": "UPM"
             }
@@ -1381,17 +1381,17 @@
           "containsPlot": [
             {
               "Measurement": "wind direction",
-              "Date": "2023-02-27T08:40:00Z",
+              "Date": "2023-02-28T01:20:00Z",
               "asWKT": "POINT(24.72468 64.05029)",
-              "Value": "244.0",
+              "Value": "317.0",
               "uom": "°",
               "Provider": "UPM"
             },
             {
               "Measurement": "wind direction",
-              "Date": "2023-02-27T08:30:00Z",
+              "Date": "2023-02-28T01:10:00Z",
               "asWKT": "POINT(24.72468 64.05029)",
-              "Value": "247.0",
+              "Value": "319.0",
               "uom": "°",
               "Provider": "UPM"
             }
@@ -1403,7 +1403,7 @@
           "containsPlot": [
             {
               "Measurement": "rainfall",
-              "Date": "2023-02-27T08:40:00Z",
+              "Date": "2023-02-28T01:20:00Z",
               "asWKT": "POINT(24.72468 64.05029)",
               "Value": "0.0",
               "uom": "mm",
@@ -1411,7 +1411,7 @@
             },
             {
               "Measurement": "rainfall",
-              "Date": "2023-02-27T08:30:00Z",
+              "Date": "2023-02-28T01:10:00Z",
               "asWKT": "POINT(24.72468 64.05029)",
               "Value": "0.0",
               "uom": "mm",
@@ -1425,17 +1425,17 @@
           "containsPlot": [
             {
               "Measurement": "air temperature",
-              "Date": "2023-02-27T08:40:00Z",
+              "Date": "2023-02-28T01:20:00Z",
               "asWKT": "POINT(24.72468 64.05029)",
-              "Value": "-5.1",
+              "Value": "3.1",
               "uom": "°C",
               "Provider": "UPM"
             },
             {
               "Measurement": "air temperature",
-              "Date": "2023-02-27T08:30:00Z",
+              "Date": "2023-02-28T01:10:00Z",
               "asWKT": "POINT(24.72468 64.05029)",
-              "Value": "-5.2",
+              "Value": "3.9",
               "uom": "°C",
               "Provider": "UPM"
             }
@@ -1447,17 +1447,17 @@
           "containsPlot": [
             {
               "Measurement": "air preassure",
-              "Date": "2023-02-27T08:40:00Z",
+              "Date": "2023-02-28T01:20:00Z",
               "asWKT": "POINT(24.72468 64.05029)",
-              "Value": "1016.4",
+              "Value": "1011.2",
               "uom": "hPa",
               "Provider": "UPM"
             },
             {
               "Measurement": "air preassure",
-              "Date": "2023-02-27T08:30:00Z",
+              "Date": "2023-02-28T01:10:00Z",
               "asWKT": "POINT(24.72468 64.05029)",
-              "Value": "1016.4",
+              "Value": "1011.0",
               "uom": "hPa",
               "Provider": "UPM"
             }
@@ -1469,17 +1469,17 @@
           "containsPlot": [
             {
               "Measurement": "air humidity",
-              "Date": "2023-02-27T08:40:00Z",
+              "Date": "2023-02-28T01:20:00Z",
               "asWKT": "POINT(24.72468 64.05029)",
-              "Value": "96.0",
+              "Value": "66.0",
               "uom": "%",
               "Provider": "UPM"
             },
             {
               "Measurement": "air humidity",
-              "Date": "2023-02-27T08:30:00Z",
+              "Date": "2023-02-28T01:10:00Z",
               "asWKT": "POINT(24.72468 64.05029)",
-              "Value": "96.0",
+              "Value": "61.0",
               "uom": "%",
               "Provider": "UPM"
             }
