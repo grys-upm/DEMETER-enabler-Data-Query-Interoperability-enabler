@@ -1,1 +1,188 @@
-
+{
+  "query" : "/getObservationsBySensor/latest/?limit=2&entityNames=679acf1083b54ecda0ccc9bfc848a7ae&scenarios=fct",
+  "params" : {
+    "entityNames" : "679acf1083b54ecda0ccc9bfc848a7ae",
+    "limit" : "2"
+  },
+  "numResults" : 12,
+  "results" : {
+    "resources" : [ {
+      "resource" : "679acf1083b54ecda0ccc9bfc848a7ae",
+      "measurements" : [ {
+        "measurement" : "total_fuel_used",
+        "observations" : [ {
+          "time" : "2023-01-27T11:14:24Z",
+          "altitude" : 0.0,
+          "geohash" : "tkmsce4fxz7r",
+          "latitude" : 24.758159816265103,
+          "longitude" : 64.05440658301046,
+          "sequenceNumber" : 203.0,
+          "value" : 3886.423,
+          "entityName" : "679acf1083b54ecda0ccc9bfc848a7ae",
+          "service" : "cropsManagement",
+          "provider" : "CENT",
+          "type" : "tractor",
+          "uom" : "http://qudt.org/vocab/unit/L"
+        }, {
+          "time" : "2023-01-27T11:14:23Z",
+          "altitude" : 0.0,
+          "geohash" : "tkmsce552ycz",
+          "latitude" : 24.758285880088803,
+          "longitude" : 64.05444765594652,
+          "sequenceNumber" : 88.0,
+          "value" : 3886.422,
+          "entityName" : "679acf1083b54ecda0ccc9bfc848a7ae",
+          "service" : "cropsManagement",
+          "provider" : "CENT",
+          "type" : "tractor",
+          "uom" : "http://qudt.org/vocab/unit/L"
+        } ]
+      }, {
+        "measurement" : "longitude",
+        "observations" : [ {
+          "time" : "2023-01-27T11:14:24Z",
+          "altitude" : 0.0,
+          "geohash" : "tkmsce4fxz7r",
+          "latitude" : 24.758159816265103,
+          "longitude" : 64.05440658301046,
+          "sequenceNumber" : 203.0,
+          "value" : 64.05440658301046,
+          "entityName" : "679acf1083b54ecda0ccc9bfc848a7ae",
+          "service" : "cropsManagement",
+          "provider" : "CENT",
+          "type" : "tractor",
+          "uom" : "https://qudt.org/vocab/unit/UNITLESS"
+        }, {
+          "time" : "2023-01-27T11:14:23Z",
+          "altitude" : 0.0,
+          "geohash" : "tkmsce552ycz",
+          "latitude" : 24.758285880088803,
+          "longitude" : 64.05444765594652,
+          "sequenceNumber" : 88.0,
+          "value" : 64.05444765594652,
+          "entityName" : "679acf1083b54ecda0ccc9bfc848a7ae",
+          "service" : "cropsManagement",
+          "provider" : "CENT",
+          "type" : "tractor",
+          "uom" : "https://qudt.org/vocab/unit/UNITLESS"
+        } ]
+      }, {
+        "measurement" : "latitude",
+        "observations" : [ {
+          "time" : "2023-01-27T11:14:24Z",
+          "altitude" : 0.0,
+          "geohash" : "tkmsce4fxz7r",
+          "latitude" : 24.758159816265103,
+          "longitude" : 64.05440658301046,
+          "sequenceNumber" : 203.0,
+          "value" : 24.758159816265103,
+          "entityName" : "679acf1083b54ecda0ccc9bfc848a7ae",
+          "service" : "cropsManagement",
+          "provider" : "CENT",
+          "type" : "tractor",
+          "uom" : "https://qudt.org/vocab/unit/UNITLESS"
+        }, {
+          "time" : "2023-01-27T11:14:23Z",
+          "altitude" : 0.0,
+          "geohash" : "tkmsce552ycz",
+          "latitude" : 24.758285880088803,
+          "longitude" : 64.05444765594652,
+          "sequenceNumber" : 88.0,
+          "value" : 24.758285880088803,
+          "entityName" : "679acf1083b54ecda0ccc9bfc848a7ae",
+          "service" : "cropsManagement",
+          "provider" : "CENT",
+          "type" : "tractor",
+          "uom" : "https://qudt.org/vocab/unit/UNITLESS"
+        } ]
+      }, {
+        "measurement" : "fuel_rate",
+        "observations" : [ {
+          "time" : "2023-01-27T11:14:24Z",
+          "altitude" : 0.0,
+          "geohash" : "tkmsce4fxz7r",
+          "latitude" : 24.758159816265103,
+          "longitude" : 64.05440658301046,
+          "sequenceNumber" : 203.0,
+          "value" : 8.0,
+          "entityName" : "679acf1083b54ecda0ccc9bfc848a7ae",
+          "service" : "cropsManagement",
+          "provider" : "CENT",
+          "type" : "tractor",
+          "uom" : "http://qudt.org/vocab/unit/L-PER-HR"
+        }, {
+          "time" : "2023-01-27T11:14:23Z",
+          "altitude" : 0.0,
+          "geohash" : "tkmsce552ycz",
+          "latitude" : 24.758285880088803,
+          "longitude" : 64.05444765594652,
+          "sequenceNumber" : 88.0,
+          "value" : 7.0,
+          "entityName" : "679acf1083b54ecda0ccc9bfc848a7ae",
+          "service" : "cropsManagement",
+          "provider" : "CENT",
+          "type" : "tractor",
+          "uom" : "http://qudt.org/vocab/unit/L-PER-HR"
+        } ]
+      }, {
+        "measurement" : "engine_speed",
+        "observations" : [ {
+          "time" : "2023-01-27T11:14:24Z",
+          "altitude" : 0.0,
+          "geohash" : "tkmsce4fxz7r",
+          "latitude" : 24.758159816265103,
+          "longitude" : 64.05440658301046,
+          "sequenceNumber" : 203.0,
+          "value" : 64.188,
+          "entityName" : "679acf1083b54ecda0ccc9bfc848a7ae",
+          "service" : "cropsManagement",
+          "provider" : "CENT",
+          "type" : "tractor",
+          "uom" : "https://qudt.org/vocab/unit/UNITLESS"
+        }, {
+          "time" : "2023-01-27T11:14:23Z",
+          "altitude" : 0.0,
+          "geohash" : "tkmsce552ycz",
+          "latitude" : 24.758285880088803,
+          "longitude" : 64.05444765594652,
+          "sequenceNumber" : 88.0,
+          "value" : 63.747,
+          "entityName" : "679acf1083b54ecda0ccc9bfc848a7ae",
+          "service" : "cropsManagement",
+          "provider" : "CENT",
+          "type" : "tractor",
+          "uom" : "https://qudt.org/vocab/unit/UNITLESS"
+        } ]
+      }, {
+        "measurement" : "coolant_temperature",
+        "observations" : [ {
+          "time" : "2023-01-27T11:14:24Z",
+          "altitude" : 0.0,
+          "geohash" : "tkmsce4fxz7r",
+          "latitude" : 24.758159816265103,
+          "longitude" : 64.05440658301046,
+          "sequenceNumber" : 203.0,
+          "value" : 67.0,
+          "entityName" : "679acf1083b54ecda0ccc9bfc848a7ae",
+          "service" : "cropsManagement",
+          "provider" : "CENT",
+          "type" : "tractor",
+          "uom" : "http://qudt.org/vocab/unit/DEG_C"
+        }, {
+          "time" : "2023-01-27T11:14:23Z",
+          "altitude" : 0.0,
+          "geohash" : "tkmsce552ycz",
+          "latitude" : 24.758285880088803,
+          "longitude" : 64.05444765594652,
+          "sequenceNumber" : 88.0,
+          "value" : 66.0,
+          "entityName" : "679acf1083b54ecda0ccc9bfc848a7ae",
+          "service" : "cropsManagement",
+          "provider" : "CENT",
+          "type" : "tractor",
+          "uom" : "http://qudt.org/vocab/unit/DEG_C"
+        } ]
+      } ]
+    } ]
+  }
+}
