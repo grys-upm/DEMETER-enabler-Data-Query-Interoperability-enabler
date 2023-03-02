@@ -1,0 +1,18 @@
+2022-09-09 18:59:13,982 DEBUG [grizzly-http-server-7] - GetObservationsFromAFarCloud - Requesting data from repositories.. 
+2022-09-09 19:02:44,505 DEBUG [grizzly-http-server-7] - GetObservationsBySensor - Method getLatestObservationsBySensor Requested by IP: 0:0:0:0:0:0:0:1, Request ID: 164017426846050291, Query: https://margarita.etsist.upm.es:9153/getObservationsBySensor/latest/?limit=10&scenarios=fct
+2022-09-09 19:02:44,512 DEBUG [grizzly-http-server-7] - GetObservationsFromAFarCloud - Requesting data from repositories.. 
+2022-09-09 19:02:44,868 ERROR [grizzly-http-server-7] - GetObservationsFromAFarCloud - Could not connect to DAM: 500
+2022-09-09 19:03:42,599 DEBUG [grizzly-http-server-8] - GetObservationsBySensor - Method getLatestObservationsBySensor Requested by IP: 0:0:0:0:0:0:0:1, Request ID: 164017426846050291, Query: https://margarita.etsist.upm.es:9153/getObservationsBySensor/latest/?limit=10&scenarios=fct
+2022-09-09 19:03:42,602 DEBUG [grizzly-http-server-8] - GetObservationsFromAFarCloud - Requesting data from repositories.. 
+2022-09-09 19:03:42,899 ERROR [grizzly-http-server-8] - GetObservationsFromAFarCloud - Could not connect to DAM: 500
+2022-09-09 19:08:58,600 DEBUG [grizzly-http-server-0] - GetObservationsBySensor - Method getLatestObservationsBySensor Requested by IP: 0:0:0:0:0:0:0:1, Request ID: 3241400335502175715, Query: https://margarita.etsist.upm.es:9153/getObservationsBySensor/latest/?limit=10&scenarios=fct
+2022-09-09 19:08:58,607 DEBUG [grizzly-http-server-0] - GetObservationsFromAFarCloud - Requesting data from repositories.. 
+2022-09-09 19:08:58,906 ERROR [grizzly-http-server-0] - GetObservationsFromAFarCloud - Could not connect to DAM: 500
+2022-09-09 19:12:33,159 DEBUG [grizzly-http-server-7] - GetObservationsBySensor - Method getLatestObservationsBySensor Requested by IP: 0:0:0:0:0:0:0:1, Request ID: 1020235709368332723, Query: https://margarita.etsist.upm.es:9153/getObservationsBySensor/latest/?limit=10&scenarios=fct
+2022-09-09 19:12:33,169 DEBUG [grizzly-http-server-7] - GetObservationsFromAFarCloud - Requesting data from repositories.. 
+2022-09-09 19:13:51,479 DEBUG [grizzly-http-server-7] - GetObservationsBySensor - Method getLatestObservationsBySensor Requested by IP: 0:0:0:0:0:0:0:1, Request ID: 3417157165465519321, Query: https://margarita.etsist.upm.es:9153/getObservationsBySensor/latest/?limit=10&scenarios=fct
+2022-09-09 19:13:51,487 DEBUG [grizzly-http-server-7] - GetObservationsFromAFarCloud - Requesting data from repositories.. 
+2022-09-09 19:13:51,773 ERROR [grizzly-http-server-7] - GetObservationsFromAFarCloud - Could not connect to DAM: 500
+2022-09-09 19:17:47,755 DEBUG [grizzly-http-server-8] - GetObservationsBySensor - Method getLatestObservationsBySensor Requested by IP: 0:0:0:0:0:0:0:1, Request ID: 3417157165465519321, Query: https://margarita.etsist.upm.es:9153/getObservationsBySensor/latest/?limit=10&scenarios=fct
+2022-09-09 19:17:47,756 DEBUG [grizzly-http-server-8] - GetObservationsFromAFarCloud - Requesting data from repositories.. 
+2022-09-09 19:17:49,281 ERROR [grizzly-http-server-8] - GetObservationsFromAFarCloud - Could not connect to DAM: 500

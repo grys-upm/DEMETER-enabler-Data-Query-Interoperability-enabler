@@ -1,0 +1,228 @@
+openapi: 3.0.0
+info:
+  version: 1.2.1
+  title: UPM REST Translator
+  description: 'This is one of the components of the DEMETER project. The REST API for the translation of AFarCloud data through a query engine directly connected to the AFarCloud Infrastructure. This API provides the information regarding the observations captured by the AFC devices in a given area. The information provided conforms to the AIM model.'
+  contact:
+    name: Mario San Emeterio - UPM
+    email: mario.sanemeterio@upm.es
+externalDocs:
+   description: Find out more about DEMETER
+   url: http://h2020-demeter.eu/    
+tags:
+  - name: Get Resources
+  
+paths:
+  "/getObservationsBySensor/latest/":
+    servers:
+      - url: https://margarita.etsist.upm.es:9150/
+        description: PROD
+    get:
+      tags:
+        - Get Resources
+      summary: Retrieves the latest telemetry from sensors that meet specific constraint.  
+      operationId: getLatestObservationsBySensor 
+      parameters: 
+        - name: limit
+          in: query            
+          description: Number of telemetries to retrieve by sensor. Default 1, maximum defined by services provider.
+          required: true
+          schema:
+            type: integer 
+          example: 10  
+        - name: entityNames
+          in: query            
+          description: List (comma separated values) of sensor identifier (entityName) to retrieve.
+          required: false
+          schema:
+            type: string
+        - name: devices
+          in: query            
+          description: List (comma separated values) of device identifier (device entityName) to retrieve.
+          required: false
+          schema:
+            type: string      
+        - name: services
+          in: query            
+          description: List (comma separated values) of application domain to retrieve.
+          required: false
+          schema:
+            type: string  
+        - name: types
+          in: query            
+          description: List (comma separated values) of the type of measurements to retrieve.
+          required: false
+          schema:
+            type: string            
+        - name: providers
+          in: query            
+          description: List (comma separated values) of providers to retrieve.
+          required: false
+          schema:
+            type: string
+        - name: measurements
+          in: query
+          description: List (comma separated values) of the measurements (observedProperty) to retrieve.
+          required: false
+          schema:
+            type: string
+        - name: altitude
+          in: query
+          description: Mininum altitude of observations.
+          required: false
+          schema:
+            type: integer   
+        - name: order
+          in: query
+          description: "Temporal order: ascending (ASC) or descending (DESC). Default value: DESC."
+          required: false
+          schema:
+            type: string     
+        - name: centr_long
+          in: query
+          description: "Proximity parameter - Centroid longitude: longitude of the centroid of the search area. To compute proximity based search, all proximity parameters are mandatories"
+          required: false
+          schema:
+            type: number    
+        - name: centr_lat
+          in: query
+          description: "Proximity parameter - Centroid latitude: latitude of the centroid of the search area. To compute proximity based search, all proximity parameters are mandatories"
+          required: false
+          schema:
+            type: number    
+        - name: radius
+          in: query
+          description: "Proximity parameter - Search radius expressed in meters. Maximun 1000 meters. To compute proximity based search, all proximity parameters are mandatories"
+          required: false
+          schema:
+            type: integer 
+        - name: language
+          in: query            
+          description: Desired response language (EN, ES).
+          required: false
+          schema:
+            type: string 
+      responses:
+        '200':
+          description: Successful Operation
+        '405':
+          description: Invalid input
+        '500':
+          description: Unexpected error 
+
+servers:
+  - url: https://margarita.etsist.upm.es:9150/
+    
+components:
+  schemas:
+    AlarmSchema:
+      title: Schema for list of alarms retrieved from AFC respository
+      type: object
+      properties:
+        alarmCode:
+          type: string
+        sequenceNumber:
+          type: integer
+        message:
+          type: string
+        resourceId:
+          type: string
+        source:
+          type: string
+        priority:
+          type: string
+          pattern: "low|medium|high"
+        alarmTime:
+          type: integer
+        status:
+          type: integer
+          minimum: 0
+          maximum: 2
+      required:
+        - alarmCode
+        - sequenceNumber
+        - message
+        - resourceId
+        - source
+        - priority
+        - alarmTime
+        - status
+        
+    GetAssetsSchema:
+      type: object
+      title: Assets Request Schema
+      properties:
+        authKey:
+          type: string
+          title: The authentication key
+        radius:
+          type: number
+          title: radius of the area
+        location:
+          type: object
+          title: The Location object
+          required:
+            - latitude
+            - longitude
+            - altitude
+          properties:
+            latitude:
+              type: number
+              title: Latitude
+              default: 0
+
+            longitude:
+              type: number
+              title: Longitude
+              default: 0
+     
+            altitude:
+              type: number
+              title: Altitude
+              default: 0
+             
+          additionalProperties: false
+      required:
+        - authKey
+        - location
+        - radius
+      additionalProperties: false
+  examples:
+   Alarm:
+    value:
+      alarmCode: UPM_TESTS
+      sequenceNumber: 3
+      message: UPM message
+      resourceId: sensor_airt_01
+      source: farmer
+      priority: high
+      alarmTime: 1564686378
+      status: 1
+    
+   GetAssetsRequest:
+    value:
+     authKey: 37250E0C324781ZZ9XX
+     location:
+      latitude: 45.45123
+      longitude: 25.25455
+      altitude: 57.5
+     radius: 150.25
+   ExampleResponse: 
+    value:
+      assetList:
+        - deviceId: 'urn:afc:AS04:droneMissions:MDH:GW:drone001'
+          type: airSensor
+          location:
+            latitude: 45.45123
+            longitude: 25.25456
+            altitude: 2.10789
+          observations:
+            - observedProperty: fake_UPM_1
+              time: '2019-09-11T05:52:45Z'
+              uom: 'http://qudt.org/vocab/unit/DEG_C'
+              value: 19.64
+            - observedProperty: fake_UPM_2
+              time: '2019-09-11T05:52:45Z'
+              uom: 'http://qudt.org/vocab/unit/DEG_C'
+              value: 19.64
+      sequenceNumber: 123
